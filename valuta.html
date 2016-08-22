@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <script>
-var dollar = 64;
-var euro = 72;
 var rub = +prompt("Введите сумму в рублях")
-alert(dollar/rub + "долларов или " + euro/rub + " евро");
+var dollar = rub/64;
+var euro = rub/72;
+alert(rub +" рублей = " +dollar.toFixed(2) + "долларов или " + euro.toFixed(2)+ " евро");
 </script>
