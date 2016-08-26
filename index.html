@@ -1,45 +1,39 @@
-<meta charset="utf-8">
-<script>
-	//команда alert
-alert("Hello world");
-alert("Hello all");
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный сайт студента GeekBrains</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-//переменные
-var a = 2;
-var b = 3;
+	<div id="header">
+		<a href="#">Главная</a> <span>/</span>
+		<a href="#">Загадки</a> <span>/</span>
+		<a href="#">Угадайка</a> <span>/</span>
+	</div>
 
-// команда promt - позволяет вводить данные
-var a = prompt("Введите число А");
-var b = prompt("Введите число B");
-//var c = a * b;
-//alert(c);
-alert(a * b);
+	<div id="content">
+		<h1>Личный сайт студента GeekBrains</h1>
+		<div id="center">
+			<img src="img/photo.png"></img>
+			<div id="box_text">
+				<p>
+				Добрый день. Меня зову <b>Василий Пупкин</b>. Я - <i>начинающий программист</i>. Я совсем недавно встал на этот путь, но уже успел написать свой первый сайт.
+				</p>
 
-//числовой тип данных
-x = 2014;
-y = 3.14;
+				<p>В этом мне помог курс <a href="https://geekbrains.ru/courses/2">Основы программирования</a></p>
 
-//строковый тип данных
-s0 = "Строка берётся в кавычки";
-s1 = "2014";
-s2 = 'Можно в одинарные';
+				<p>
+				На этом сайте вы сможете сыграть в три игры, которые я написал:
+				</p> 
+			</div>
+		</div>
+	</div>
 
-//здесь сложение не происходит, цифры просто приклеиваются друг к другу
-var a = prompt("Введите число А");
-var b = prompt("Введите число B");
-alert(a + b);
+	<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/">GeekBrains </a>
+	</div>
 
-//чтобы произвести сложение нужно применить команду parseInt()
-var a = parseInt(prompt("Введите число А"));
-var b = parseInt(prompt("Введите число B"));
-alert(a+b);
-
-//команда parsInt не что иное, как +. 
-var a = +prompt("Введите число А");
-var b = +prompt("Введите число B");
-alert(a+b);
-
-var c = parseInt(prompt("Введите число"));
-alert("Квадрат числа: " + c*c);
-
-</script>
+</body>
+</html>
