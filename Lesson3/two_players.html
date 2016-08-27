@@ -6,10 +6,11 @@
 </head>
 <body>
 	<script>
-		var answer = parseInt(Math.random() * 100);
+	var answer = parseInt(Math.random() * 100);
     var playerNumber = 1;
+
     while (true) {
-        var userAnswer = prompt("Какое число загадал компьютер? Если надоело то введите q \nХодит игрок номер: " + playerNumber);
+        var userAnswer = prompt("Угадайте число между 0 и 100. \nХодит игрок номер: " + playerNumber + "\n\nЕсли надоело, то введите q");
 
         if (userAnswer == "q") {
             break;

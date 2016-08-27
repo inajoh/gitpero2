@@ -3,14 +3,17 @@
 
 //Проверка на правильность вводимого числа
 do{
-	var deposit = +prompt("Введите сумму вклада \nЧисло должно быть положительным");
+	var deposit = +prompt("Введите сумму вклада \nЧисло должно быть положительным\n");
 } while(deposit<=0);
 
 do {
-var percent = +prompt ("Введите годовой банковский процент");
-} while(percent <=0);
+	var percent = +prompt ("Введите годовой банковский процент\n");
+} while(percent <0);
 
-year = +prompt("Введите года")
+do {
+	year = +prompt("Введите года\n")
+} while(year <=0);
+
 
 for(var i = 1; i <=year; i++){
 deposit = (deposit + deposit/100 *percent);
