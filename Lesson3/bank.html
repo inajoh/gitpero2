@@ -1,9 +1,18 @@
 <meta charset="utf-8">
 <script>
-var deposit = +prompt("Введите сумму вклада");
-var percent = +prompt ("Введите годовой банковский процент");
 
-for(var i = 1; i <=5; i++){
+//Проверка на правильность вводимого числа
+do{
+	var deposit = +prompt("Введите сумму вклада \nЧисло должно быть положительным");
+} while(deposit<=0);
+
+do {
+var percent = +prompt ("Введите годовой банковский процент");
+} while(percent <=0);
+
+year = +prompt("Введите года")
+
+for(var i = 1; i <=year; i++){
 deposit = (deposit + deposit/100 *percent);
 document.write(i + " год: " + deposit.toFixed(2) +"<br>");
 }
